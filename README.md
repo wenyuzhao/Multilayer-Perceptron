@@ -2,7 +2,7 @@
 
 [Multilayer Perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron) based on [NumPy](http://www.numpy.org/)
 
-Using [Stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) to optimize network.
+Using [Backpropagation](https://en.wikipedia.org/wiki/Backpropagation) with [Stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) to optimize network.
 
 ## Layers
 
