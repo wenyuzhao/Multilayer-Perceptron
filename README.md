@@ -2,7 +2,9 @@
 
 [Multilayer Perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron) based on [NumPy](http://www.numpy.org/)
 
-Supports **SigmoidLayer** / **ReLULayer** / **LeakyReLULayer**
+Using [Stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) to optimize network.
+
+Supports **SigmoidLayer** / **ReLULayer** / **LeakyReLULayer**.
 
 ## Examples
 
