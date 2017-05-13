@@ -4,14 +4,14 @@
 
 Supports **SigmoidLayer** / **ReLULayer** / **LeakyReLULayer**
 
-# Examples
+## Examples
 
 See:
 
 1. [Basic example](test.py)
 2. [Auto encoder example](auto_encoder.py)
 
-# Auto encoder performance of [this example](auto_encoder.py)
+## Auto encoder performance of [this example](auto_encoder.py)
 
 ```
 input:
