@@ -4,7 +4,12 @@
 
 Using [Stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) to optimize network.
 
-Supports **SigmoidLayer** / **ReLULayer** / **LeakyReLULayer**.
+## Layers
+
+* InputLayer
+* SigmoidLayer
+* ReLULayer
+* LeakyReLULayer
 
 ## Examples
 

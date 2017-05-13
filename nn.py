@@ -29,7 +29,7 @@ class BaseLayer:
     def forward(self, x): raise NotImplementedError
     def backword(self, dA, learning_rate): raise NotImplementedError
 
-class Layer(BaseLayer):
+class FullyConnectedLayer(BaseLayer):
     def __init__(self, inputs, outputs, act):
         super().__init__(inputs, outputs)
         self.w = np.random.rand(outputs, inputs) - 0.5
@@ -48,7 +48,7 @@ class Layer(BaseLayer):
         self.b -= dB * learning_rate
         return dX
         
-class LeakyReLULayer(Layer):
+class LeakyReLULayer(FullyConnectedLayer):
     def __init__(self, inputs, outputs, alpha):
         super().__init__(inputs, outputs, act=LeakyReLU(alpha))
 
@@ -56,7 +56,7 @@ class ReLULayer(LeakyReLULayer):
     def __init__(self, inputs, outputs):
         super().__init__(inputs, outputs, alpha=LeakyReLU(0.))
 
-class SigmoidLayer(Layer):
+class SigmoidLayer(FullyConnectedLayer):
     def __init__(self, inputs, outputs):
         super().__init__(inputs, outputs, act=Sigmoid)
 
