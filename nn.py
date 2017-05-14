@@ -69,6 +69,18 @@ class InputLayer(BaseLayer):
     def backword(self, dA, learning_rate):
         return dA
 
+class DropoutLayer(BaseLayer):
+    def __init__(self, inputs, probability):
+        super().__init__(inputs, inputs)
+        self.probability = probability
+    def forward(self, x):
+        return x
+    def backword(self, dA, learning_rate):
+        for i in range(dA.shape[0]):
+            if random.random() < self.probability:
+                dA[i][0] = 0
+        return dA
+
 
 
 #

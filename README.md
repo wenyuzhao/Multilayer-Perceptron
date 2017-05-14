@@ -10,6 +10,7 @@ Using [Backpropagation](https://en.wikipedia.org/wiki/Backpropagation) with [Sto
 * SigmoidLayer
 * ReLULayer
 * LeakyReLULayer
+* DropoutLayer
 
 ## Examples
 
@@ -17,6 +18,7 @@ See:
 
 1. [Basic example](test.py)
 2. [Auto encoder example](auto_encoder.py)
+3. [Auto encoder & dropout example](auto_encoder_dropout.py)
 
 ## Auto encoder performance of [this example](auto_encoder.py)
 
