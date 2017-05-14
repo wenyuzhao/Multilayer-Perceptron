@@ -7,6 +7,7 @@ Using [Backpropagation](https://en.wikipedia.org/wiki/Backpropagation) with [Sto
 ## Layers
 
 * InputLayer
+* TanhLayer
 * SigmoidLayer
 * ReLULayer
 * LeakyReLULayer

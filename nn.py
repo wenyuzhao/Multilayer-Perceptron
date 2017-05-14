@@ -16,7 +16,10 @@ LeakyReLU = lambda alpha=0.01: (
     lambda x: np.maximum(x > 0., alpha * (x <= 0.)),
 )
 Sigmoid = (__sigmoid, __dsigmoid)
-
+Tanh = (
+    lambda x: np.tanh(x),
+    lambda x: 1 - np.tanh(x) ** 2,
+)
 
 
 #
@@ -59,6 +62,10 @@ class ReLULayer(LeakyReLULayer):
 class SigmoidLayer(FullyConnectedLayer):
     def __init__(self, inputs, outputs):
         super().__init__(inputs, outputs, act=Sigmoid)
+
+class TanhLayer(FullyConnectedLayer):
+    def __init__(self, inputs, outputs):
+        super().__init__(inputs, outputs, act=Tanh)
 
 class InputLayer(BaseLayer):
     def __init__(self, inputs):

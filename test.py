@@ -12,7 +12,7 @@ model = nn.NeuralNetwork([
 ])
 
 # train data
-model.fit(train_data, learning_rate=0.01, threshold=1e-5, epochs=200000)
+model.fit(train_data, learning_rate=0.01, threshold=5e-6, epochs=200000)
 
 # test
 for x, y in test_data:
