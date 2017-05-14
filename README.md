@@ -13,6 +13,8 @@ Using [Backpropagation](https://en.wikipedia.org/wiki/Backpropagation) with [Sto
 * LeakyReLULayer
 * DropoutLayer
 
+*See: [nn.py](nn.py)*
+
 ## Examples
 
 See:
